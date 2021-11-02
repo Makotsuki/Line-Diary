@@ -1,0 +1,103 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+form input[type="submit"] {
+  cursor: pointer;
+}
+
+body {
+  font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+  margin: 0;
+  padding: 0;
+  min-height: 1vh;
+}
+
+.main {
+  position: absolute;
+  top: 54px;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: rgb(255, 251, 251);
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+header {
+  height: 54px;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(207, 154, 154);
+  z-index: 1;
+}
+
+header a {
+  float: left;
+  padding: 10px 20px;
+  color: white;
+}
+
+.header-menus {
+  float: right;
+  padding: 16px 10px;
+  color: white;
+}
+
+.header-menus li {
+  float: left;
+  padding: 0px 10px;
+}
+
+.flash {
+  padding: 10px 0;
+  color: white;
+  background-color: #4b4b4ba4;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  top: 54px;
+}
+
+// top
+.top-message {
+  padding: 0 60px;
+  text-align: center;
+  color: #4b4b4b;
+}
+
+.top-img {
+  margin: 30px;
+  max-width: 400px;
+}

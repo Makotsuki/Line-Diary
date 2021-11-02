@@ -1,0 +1,95 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// posts/index
+.posts-index-item {
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0 2px 6px #d4cccc;
+}
+
+// posts/show
+.posts-show-item {
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0 2px 6px #d4cccc;
+}
+
+.post-percentage{
+  font-size: 20px;
+}
+
+.post-memo {
+  white-space: pre-line;
+  padding-bottom: 30px;
+}
+
+.post-time {
+  color: #7e7a7a;
+  font-size: 14px;
+}
+
+// posts/new
+.form {
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0 2px 6px #d4cccc;
+}
+
+.form-heading {
+  padding: 0 8px;
+  color: #807e7e;
+  border-left: solid 5px #eea9a9;
+}
+
+.form-percentage {
+  padding: 20px 0;
+}
+
+.form-percentage p {
+  margin: 5px 0;
+}
+
+.form-percentage span {
+  margin-left: 5px;
+}
+
+.form-memo {
+  padding-bottom: 20px;
+}
+
+.form-memo p {
+  margin: 5px 0;
+}
+
+.form-memo textarea {
+  font-size: 16px;
+  resize: none;
+  padding: 5px;
+  width: 90%;
+  height: 150px;
+}
+
+.button {
+  background-color: #eea9a9;
+  color: white;
+  border: 1px solid #d4cccc;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px #d4cccc;
+  font-size: 18px;
+  text-align: center;
+  padding: 4px 12px;
+  transition: .3s;
+}
+
+.button:hover {
+  box-shadow: none;
+  background-color: white;
+  color: #eea9a9;
+}
+
+.alert-warning {
+  color: red;
+  margin-top: 20px;
+}

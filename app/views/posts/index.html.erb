@@ -1,0 +1,19 @@
+<div class="main posts-index">
+  <div class="container">
+    <div class="posts-graph">
+
+    </div>
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <p>
+          <%= link_to(post.percentage, "/posts/#{post.id}") %> %
+        </p>
+        <div class="post-time">
+          <%= post.created_at.to_s(:datetime_jp) %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+      

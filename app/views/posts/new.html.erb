@@ -1,0 +1,18 @@
+<div class="main posts-new">
+  <div class="container">
+    <div class="form">
+      <h2 class="form-heading">今日の記録</h2>
+      <%= form_tag("/posts/create") do %>
+        <%= render("layouts/error_messages") %>
+          <div class="form-percentage">
+            <p>満足度</p>
+            <input type="text" name="percentage" style="width: 50px; height: 30px;" value="<%= @post.percentage %>"><span>%</span>
+          </div>
+          <div class="form-memo">
+            <p>メモ（任意）</p>
+            <textarea name="memo"><%= @post.memo %></textarea>
+          </div>
+          <input type="submit" value="記録" class="button">
+      <% end %>
+  </div>
+</div>
