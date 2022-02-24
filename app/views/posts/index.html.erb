@@ -1,7 +1,13 @@
 <div class="main posts-index">
   <div class="container">
     <div class="posts-graph">
-
+      <%= line_chart Post.group_by_day(:created_at, series: false).average(:percentage),
+      curve: false,
+      min: 0,
+      max: 100,
+      colors: ["#8795dc"],
+      suffix: "%"
+      %>
     </div>
     <% @posts.each do |post| %>
       <div class="posts-index-item">
